@@ -1,0 +1,13 @@
+package mypack;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AuditController {
+
+    @GetMapping("/audit")
+    public String audit() {
+        return "Audit Service is working!";
+    }
+}
